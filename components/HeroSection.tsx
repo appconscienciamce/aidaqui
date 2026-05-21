@@ -18,9 +18,9 @@ export default function HeroSection() {
           <div className="hero-badges" aria-label="Detalles de la experiencia">
             {/* SVGs must use native img — Next Image degrades vector quality at non-native sizes */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/badge-1.svg" alt="Experiencia en vivo" className="hero-badge" />
+            <img src="/badge-1.webp" alt="Experiencia en vivo" className="hero-badge" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/badge-2.svg" alt="22 de mayo" className="hero-badge" />
+            <img src="/badge-2.webp" alt="22 de mayo" className="hero-badge" />
           </div>
 
           <h1 id="hero-title" className="hero-title">
@@ -57,7 +57,12 @@ export default function HeroSection() {
             ))}
           </div>
 
-          <button className="button hero-cta" type="button">
+          <a
+            href="https://buy.stripe.com/8x200bbsAf5A3US1ge2400E"
+            className="button hero-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="outline" />
             <div className="state state--default">
               <div className="icon" aria-hidden="true">
@@ -94,7 +99,7 @@ export default function HeroSection() {
                 ))}
               </p>
             </div>
-          </button>
+          </a>
         </div>
       </div>
     </section>
