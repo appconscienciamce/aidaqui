@@ -198,6 +198,52 @@ export default function Section5() {
             recalibrar tu energía y sostener esta nueva etapa de tu vida.
           </p>
         </div>
+
+        <div className="s5-cta">
+          <a
+            href="https://buy.stripe.com/8x200bbsAf5A3US1ge2400E"
+            className="button s5-cta__btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="outline" />
+            <div className="state state--default">
+              <div className="icon" aria-hidden="true">
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g style={{ filter: "url(#sparkleS5L)" }}>
+                    <path d="M12 2.5l2.4 6.1L20.5 11l-6.1 2.4L12 19.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z" fill="currentColor" />
+                  </g>
+                  <defs>
+                    <filter id="sparkleS5L">
+                      <feDropShadow dx="0" dy="1" stdDeviation="0.6" floodOpacity="0.5" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <p>
+                {"Reservar mi lugar".split("").map((char, i) =>
+                  char === " " ? (
+                    <span key={i} className="btn-space"> </span>
+                  ) : (
+                    <span key={i} style={{ "--i": i } as React.CSSProperties}>{char}</span>
+                  )
+                )}
+              </p>
+              <div className="icon icon--end" aria-hidden="true">
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g style={{ filter: "url(#sparkleS5R)" }}>
+                    <path d="M12 2.5l2.4 6.1L20.5 11l-6.1 2.4L12 19.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z" fill="currentColor" />
+                  </g>
+                  <defs>
+                    <filter id="sparkleS5R">
+                      <feDropShadow dx="0" dy="1" stdDeviation="0.6" floodOpacity="0.5" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );

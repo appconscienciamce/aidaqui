@@ -417,8 +417,10 @@ body {
 }
 .button .state {
   padding-left: 29px;
+  padding-right: 29px;
   z-index: 3;
   display: flex;
+  align-items: center;
   position: relative;
 }
 .button .state p {
@@ -438,6 +440,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.button .state .icon--end {
+  position: absolute;
+  right: 0;
+  left: auto;
 }
 .button .state .icon svg {
   overflow: visible;
@@ -481,9 +488,17 @@ body {
 }
 
 .button .state p span {
-  display: block;
+  display: inline-block;
   opacity: 0;
   animation: btn-slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
+}
+
+.button .state p .btn-space,
+.final-support-link .state p .btn-space {
+  display: inline-block;
+  width: 0.28em;
+  opacity: 1;
+  animation: none;
 }
 .button:hover p span {
   opacity: 1;
@@ -1318,6 +1333,19 @@ body {
   max-width: 600px;
 }
 
+/* Mid-page CTA — shown after bonus section */
+.s5-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.s5-cta__btn {
+  min-width: 280px;
+  max-width: 420px;
+  width: 100%;
+}
+
 /* Mobile stack + bonus-mobile — hidden on desktop */
 .s5-stack,
 .s5-bonus-mobile {
@@ -1391,7 +1419,6 @@ body {
   inset: 0;
   z-index: 0;
   background-image: url("/section-6.webp");
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }

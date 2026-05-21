@@ -9,6 +9,29 @@ const schedules = [
 
 const ctaText = "Reservar mi lugar";
 
+const SparkleIcon = ({ id }: { id: string }) => (
+  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g style={{ filter: `url(#${id})` }}>
+      <path d="M12 2.5l2.4 6.1L20.5 11l-6.1 2.4L12 19.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z" fill="currentColor" />
+    </g>
+    <defs>
+      <filter id={id}>
+        <feDropShadow dx="0" dy="1" stdDeviation="0.6" floodOpacity="0.5" />
+      </filter>
+    </defs>
+  </svg>
+);
+
+function renderLetters(text: string, keyPrefix = "l") {
+  return text.split("").map((char, i) =>
+    char === " " ? (
+      <span key={`${keyPrefix}-space-${i}`} className="btn-space">{" "}</span>
+    ) : (
+      <span key={`${keyPrefix}-${i}`} style={{ "--i": i } as React.CSSProperties}>{char}</span>
+    )
+  );
+}
+
 export default function HeroSection() {
   return (
     <section className="hero-section" aria-labelledby="hero-title">
@@ -66,38 +89,12 @@ export default function HeroSection() {
             <div className="outline" />
             <div className="state state--default">
               <div className="icon" aria-hidden="true">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g style={{ filter: "url(#sparkleShadow)" }}>
-                    <path
-                      d="M12 2.5l2.4 6.1L20.5 11l-6.1 2.4L12 19.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z"
-                      fill="currentColor"
-                    />
-                  </g>
-                  <defs>
-                    <filter id="sparkleShadow">
-                      <feDropShadow
-                        dx="0"
-                        dy="1"
-                        stdDeviation="0.6"
-                        floodOpacity="0.5"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
+                <SparkleIcon id="sparkleHeroL" />
               </div>
-              <p>
-                {ctaText.split("").map((char, i) => (
-                  <span key={`cta-${char}-${i}`} style={{ "--i": i } as React.CSSProperties}>
-                    {char === " " ? " " : char}
-                  </span>
-                ))}
-              </p>
+              <p>{renderLetters(ctaText, "hero")}</p>
+              <div className="icon icon--end" aria-hidden="true">
+                <SparkleIcon id="sparkleHeroR" />
+              </div>
             </div>
           </a>
         </div>
