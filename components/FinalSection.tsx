@@ -7,7 +7,6 @@ import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const ctaPrimary = "QUIERO RESERVAR MI LUGAR";
-const ctaSupport = "CONTACTA CON SOPORTE";
 
 const schedules = [
   { country: "España",    src: "/espana.webp" },
@@ -135,27 +134,6 @@ export default function FinalSection() {
                 </p>
               </div>
             </a>
-
-            <button className="button final-cta-support" type="button">
-              <div className="outline" />
-              <div className="state state--default">
-                <div className="icon" aria-hidden="true">
-                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  {ctaSupport.split("").map((char, i) => (
-                    <span key={i} style={{ "--i": i } as React.CSSProperties}>
-                      {char === " " ? " " : char}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            </button>
           </div>
 
           <div className="final-schedules" aria-label="Horarios por país">
