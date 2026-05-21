@@ -39,7 +39,7 @@ export default function HeroSection() {
 
           <p className="hero-description">
             Una experiencia profunda diseñada para liberar bloqueos energéticos,
-            reconectar con tu intuición y volver a sentirte alinead@ contigo.
+            reconectar con tu intuición y volver a sentirte alineada contigo.
           </p>
 
           <div className="hero-schedules" aria-label="Horarios por país">

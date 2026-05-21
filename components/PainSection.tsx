@@ -33,7 +33,7 @@ const symptoms = [
     icon: Ear,
     text: (
       <>
-        Tu intuición te pide <em>cambios que aún no sabés cómo hacer</em>
+        Tu intuición te pide <em>cambios que aún no sabes cómo hacer</em>
       </>
     ),
   },
@@ -41,7 +41,7 @@ const symptoms = [
     icon: Lock,
     text: (
       <>
-        Trabajaste mucho en vos… pero <em>algo sigue bloqueado</em>
+        Has trabajado mucho en ti… pero <em>algo sigue bloqueado</em>
       </>
     ),
   },
@@ -49,7 +49,7 @@ const symptoms = [
     icon: Heart,
     text: (
       <>
-        Querés volver a sentir <em>conexión</em> con vos, con Dios y con tu verdad
+        Quieres volver a sentir <em>conexión</em> contigo, con Dios y con tu verdad
       </>
     ),
   },
@@ -57,7 +57,7 @@ const symptoms = [
     icon: UserRoundX,
     text: (
       <>
-        Ya no te identificás con <em>la versión que estás sosteniendo</em>
+        Ya no te identificas con <em>la versión que estás sosteniendo</em>
       </>
     ),
   },
@@ -165,8 +165,8 @@ export default function PainSection() {
             <em>siguiente nivel de tu alma.</em>
           </p>
           <p>
-            Y aunque por fuera continúes con tu vida… por dentro sentís que te
-            estás alejando de quien realmente sos en esencia.
+            Y aunque por fuera continúes con tu vida… por dentro sientes que te
+            estás alejando de quien realmente eres en esencia.
           </p>
         </div>
 
@@ -192,8 +192,8 @@ export default function PainSection() {
             no llena el vacío.
           </p>
           <p className="pain-close__emphasis">
-            Solo volver a vos puede regresarte a la coherencia, la paz, la
-            plenitud y a manifestar una vida que amés todos los días.
+            Solo volver a ti puede regresarte a la coherencia, la paz, la
+            plenitud y a manifestar una vida que ames todos los días.
           </p>
         </div>
 

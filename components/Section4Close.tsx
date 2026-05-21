@@ -57,11 +57,11 @@ export default function Section4Close() {
           La verdadera transformación no ocurre solo entendiendo más.
         </p>
         <p className="text-reveal s4-close__phrase">
-          Ocurre cuando empezás a habitar una nueva frecuencia en tu vida real.
+          Ocurre cuando empiezas a habitar una nueva frecuencia en tu vida real.
         </p>
         <p className="text-reveal s4-close__phrase">
           En tu cuerpo, en tus relaciones, en tus decisiones,<br />
-          en la forma en la que te elegís.
+          en la forma en la que te eliges.
         </p>
       </div>
     </div>
