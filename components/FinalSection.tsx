@@ -127,7 +127,7 @@ export default function FinalSection() {
 
           <div className="final-actions">
             <a
-              href="https://buy.stripe.com/8x200bbsAf5A3US1ge2400E"
+              href="https://buy.stripe.com/6oU8wPaX4c9IdXng31ffy0v"
               className="button final-cta-primary"
               target="_blank"
               rel="noopener noreferrer"
