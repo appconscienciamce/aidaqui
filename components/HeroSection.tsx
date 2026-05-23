@@ -81,7 +81,7 @@ export default function HeroSection() {
           </div>
 
           <a
-            href="https://buy.stripe.com/8x200bbsAf5A3US1ge2400E"
+            href="https://buy.stripe.com/6oU8wPaX4c9IdXng31ffy0v"
             className="button hero-cta"
             target="_blank"
             rel="noopener noreferrer"
