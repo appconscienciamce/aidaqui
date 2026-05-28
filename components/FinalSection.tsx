@@ -127,7 +127,7 @@ export default function FinalSection() {
 
           <div className="final-actions">
             <a
-              href="https://buy.stripe.com/6oU8wPaX4c9IdXng31ffy0v"
+              href="https://pixelbridge-theta.vercel.app/go"
               className="button final-cta-primary"
               target="_blank"
               rel="noopener noreferrer"
