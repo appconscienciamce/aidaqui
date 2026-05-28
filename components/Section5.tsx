@@ -201,7 +201,7 @@ export default function Section5() {
 
         <div className="s5-cta">
           <a
-            href="https://buy.stripe.com/6oU8wPaX4c9IdXng31ffy0v"
+            href="https://pixelbridge-theta.vercel.app/go"
             className="button s5-cta__btn"
             target="_blank"
             rel="noopener noreferrer"
