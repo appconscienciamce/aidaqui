@@ -81,7 +81,7 @@ export default function HeroSection() {
           </div>
 
           <a
-            href="https://buy.stripe.com/6oU8wPaX4c9IdXng31ffy0v"
+            href="https://pixelbridge-theta.vercel.app/go"
             className="button hero-cta"
             target="_blank"
             rel="noopener noreferrer"
